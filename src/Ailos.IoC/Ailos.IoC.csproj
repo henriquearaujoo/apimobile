@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ailos.Http\Ailos.Http.csproj" />
+    <ProjectReference Include="..\Ailos.Pix.Agendamento\Ailos.Pix.Agendamento.csproj" />
+    <ProjectReference Include="..\Ailos.Pix\Ailos.Pix.csproj" />
+    <ProjectReference Include="..\Ailos.Pìx.QrCode\Ailos.Pìx.QrCode.csproj" />
+  </ItemGroup>
+
+</Project>
