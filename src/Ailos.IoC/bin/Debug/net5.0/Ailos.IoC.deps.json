@@ -1,0 +1,72 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Ailos.IoC/1.0.0": {
+        "dependencies": {
+          "Ailos.Http": "1.0.0",
+          "Ailos.Pix": "1.0.0",
+          "Ailos.Pix.Agendamento": "1.0.0",
+          "Ailos.Pìx.QrCode": "1.0.0"
+        },
+        "runtime": {
+          "Ailos.IoC.dll": {}
+        }
+      },
+      "Ailos.Http/1.0.0": {
+        "runtime": {
+          "Ailos.Http.dll": {}
+        }
+      },
+      "Ailos.Pix/1.0.0": {
+        "dependencies": {
+          "Ailos.Http": "1.0.0"
+        },
+        "runtime": {
+          "Ailos.Pix.dll": {}
+        }
+      },
+      "Ailos.Pix.Agendamento/1.0.0": {
+        "runtime": {
+          "Ailos.Pix.Agendamento.dll": {}
+        }
+      },
+      "Ailos.Pìx.QrCode/1.0.0": {
+        "runtime": {
+          "Ailos.Pìx.QrCode.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Ailos.IoC/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ailos.Http/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ailos.Pix/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ailos.Pix.Agendamento/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ailos.Pìx.QrCode/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

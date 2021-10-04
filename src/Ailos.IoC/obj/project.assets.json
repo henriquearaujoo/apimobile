@@ -1,10 +1,10 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {
+    "net5.0": {
       "Ailos.Http/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v5.0",
         "compile": {
           "bin/placeholder/Ailos.Http.dll": {}
         },
@@ -14,7 +14,7 @@
       },
       "Ailos.Pix/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Ailos.Http": "1.0.0"
         },
@@ -27,7 +27,7 @@
       },
       "Ailos.Pix.Agendamento/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v5.0",
         "compile": {
           "bin/placeholder/Ailos.Pix.Agendamento.dll": {}
         },
@@ -37,7 +37,7 @@
       },
       "Ailos.Pìx.QrCode/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v5.0",
         "compile": {
           "bin/placeholder/Ailos.Pìx.QrCode.dll": {}
         },
@@ -70,7 +70,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": [
+    "net5.0": [
       "Ailos.Http >= 1.0.0",
       "Ailos.Pix >= 1.0.0",
       "Ailos.Pix.Agendamento >= 1.0.0",
@@ -94,14 +94,14 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "netcoreapp3.1"
+        "net5.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net5.0": {
+          "targetAlias": "net5.0",
           "projectReferences": {
             "C:\\Users\\Henrique\\Documents\\projetos\\ailos\\ApiMobile\\src\\Ailos.Http\\Ailos.Http.csproj": {
               "projectPath": "C:\\Users\\Henrique\\Documents\\projetos\\ailos\\ApiMobile\\src\\Ailos.Http\\Ailos.Http.csproj"
@@ -125,8 +125,8 @@
       }
     },
     "frameworks": {
-      "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
+      "net5.0": {
+        "targetAlias": "net5.0",
         "imports": [
           "net461",
           "net462",
