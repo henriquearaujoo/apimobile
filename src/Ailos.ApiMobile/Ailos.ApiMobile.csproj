@@ -8,4 +8,8 @@
     <ProjectReference Include="..\Ailos.IoC\Ailos.IoC.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\Api\Pix\" />
+  </ItemGroup>
+
 </Project>

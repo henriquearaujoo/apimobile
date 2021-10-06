@@ -8,4 +8,8 @@
     <ProjectReference Include="..\Ailos.Http\Ailos.Http.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Validators\" />
+  </ItemGroup>
+
 </Project>

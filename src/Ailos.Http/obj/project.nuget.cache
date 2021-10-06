@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z0r/zt7flhRBt33RcS/LSK6dwTE6bFfMM6vkuv30iv0T/OJRcISD9FseVzY6QKfmgmJngr04blpYd3n5kjb7Yw==",
+  "dgSpecHash": "n0bjSdOdCZ4RTp+YXdNvw98+/BZ93SoPJUGhaLxUIvVxCPy5s7ysXD86F54XDVCpAkPzD8vFJAQ5KdrRz/KKzA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Henrique\\Documents\\projetos\\ailos\\ApiMobile\\src\\Ailos.Http\\Ailos.Http.csproj",
+  "projectFilePath": "C:\\Users\\sandro.nyland\\source\\workspace\\Ailos\\apimobile\\src\\Ailos.Http\\Ailos.Http.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

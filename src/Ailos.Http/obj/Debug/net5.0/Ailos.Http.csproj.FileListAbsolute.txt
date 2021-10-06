@@ -10,3 +10,15 @@ C:\Users\Henrique\Documents\projetos\ailos\ApiMobile\src\Ailos.Http\bin\Debug\ne
 C:\Users\Henrique\Documents\projetos\ailos\ApiMobile\src\Ailos.Http\obj\Debug\net5.0\Ailos.Http.dll
 C:\Users\Henrique\Documents\projetos\ailos\ApiMobile\src\Ailos.Http\obj\Debug\net5.0\ref\Ailos.Http.dll
 C:\Users\Henrique\Documents\projetos\ailos\ApiMobile\src\Ailos.Http\obj\Debug\net5.0\Ailos.Http.pdb
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.Http\bin\Debug\net5.0\Ailos.Http.deps.json
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.Http\bin\Debug\net5.0\Ailos.Http.dll
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.Http\bin\Debug\net5.0\ref\Ailos.Http.dll
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.Http\bin\Debug\net5.0\Ailos.Http.pdb
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.Http\obj\Debug\net5.0\Ailos.Http.csproj.AssemblyReference.cache
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.Http\obj\Debug\net5.0\Ailos.Http.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.Http\obj\Debug\net5.0\Ailos.Http.AssemblyInfoInputs.cache
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.Http\obj\Debug\net5.0\Ailos.Http.AssemblyInfo.cs
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.Http\obj\Debug\net5.0\Ailos.Http.csproj.CoreCompileInputs.cache
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.Http\obj\Debug\net5.0\Ailos.Http.dll
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.Http\obj\Debug\net5.0\ref\Ailos.Http.dll
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.Http\obj\Debug\net5.0\Ailos.Http.pdb

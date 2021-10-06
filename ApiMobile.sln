@@ -27,19 +27,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit", "Unit", "{696AA466-7
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{2EA00ADD-FBD0-4552-97FC-E133A776773F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ailos.Pix.Integration.Test", "test\Ailos.Pix.Integration.Test\Ailos.Pix.Integration.Test.csproj", "{38731E07-9799-4FDC-A225-37595382A06D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ailos.Pix.Integration.Test", "test\Ailos.Pix.Integration.Test\Ailos.Pix.Integration.Test.csproj", "{38731E07-9799-4FDC-A225-37595382A06D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ailos.Pix.Unit.Test", "test\Ailos.Pix.Unit.Test\Ailos.Pix.Unit.Test.csproj", "{F9889359-3BF2-437B-AE5B-1969388B21AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ailos.Pix.Unit.Test", "test\Ailos.Pix.Unit.Test\Ailos.Pix.Unit.Test.csproj", "{F9889359-3BF2-437B-AE5B-1969388B21AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ailos.Pìx.QrCode", "src\Ailos.Pìx.QrCode\Ailos.Pìx.QrCode.csproj", "{5F73C26E-6E81-4808-86BB-96818E17A1D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ailos.Pìx.QrCode", "src\Ailos.Pìx.QrCode\Ailos.Pìx.QrCode.csproj", "{5F73C26E-6E81-4808-86BB-96818E17A1D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ailos.Pix.Agendamento", "src\Ailos.Pix.Agendamento\Ailos.Pix.Agendamento.csproj", "{9EAC2317-4510-4C2F-830A-52A497D0771D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ailos.Pix.Agendamento", "src\Ailos.Pix.Agendamento\Ailos.Pix.Agendamento.csproj", "{9EAC2317-4510-4C2F-830A-52A497D0771D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Poupanca", "Poupanca", "{A323252B-8C8A-43BA-94A0-A63E3F34A88A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CDC", "CDC", "{C8FE2B30-7ABC-485B-970C-B973C3DD9E5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ailos.IoC", "src\Ailos.IoC\Ailos.IoC.csproj", "{4849A00B-50F4-4074-91C0-17036A6DE6BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ailos.IoC", "src\Ailos.IoC\Ailos.IoC.csproj", "{4849A00B-50F4-4074-91C0-17036A6DE6BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ailos.ApiMobile.API", "src\Ailos.ApiMobile.API\Ailos.ApiMobile.API.csproj", "{65EF1031-8A1F-4543-B620-CD5EE970B42C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,6 +81,10 @@ Global
 		{4849A00B-50F4-4074-91C0-17036A6DE6BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4849A00B-50F4-4074-91C0-17036A6DE6BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4849A00B-50F4-4074-91C0-17036A6DE6BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65EF1031-8A1F-4543-B620-CD5EE970B42C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65EF1031-8A1F-4543-B620-CD5EE970B42C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65EF1031-8A1F-4543-B620-CD5EE970B42C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65EF1031-8A1F-4543-B620-CD5EE970B42C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -101,6 +107,7 @@ Global
 		{A323252B-8C8A-43BA-94A0-A63E3F34A88A} = {799A0A84-C71B-4EF9-BE0A-9CC6E727C6A2}
 		{C8FE2B30-7ABC-485B-970C-B973C3DD9E5D} = {799A0A84-C71B-4EF9-BE0A-9CC6E727C6A2}
 		{4849A00B-50F4-4074-91C0-17036A6DE6BD} = {799A0A84-C71B-4EF9-BE0A-9CC6E727C6A2}
+		{65EF1031-8A1F-4543-B620-CD5EE970B42C} = {EAEEB414-59C9-41F7-B99C-18A94D7FC465}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {80C0DE8A-58BA-4BF6-AA3C-6C7877D3E75D}

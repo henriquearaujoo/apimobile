@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "PBTQYApS17+9U1I2uziTIXpAUX92WtXpqe/ekEp2tY3vp+6qpl0QcGe1YMoVQxwDaBqEAGMyabEn0nxAzzrAPw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sandro.nyland\\source\\workspace\\Ailos\\apimobile\\src\\Ailos.ApiMobile.API\\Ailos.ApiMobile.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sandro.nyland\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\sandro.nyland\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\sandro.nyland\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\sandro.nyland\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\sandro.nyland\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\sandro.nyland\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
