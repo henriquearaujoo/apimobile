@@ -9,8 +9,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using Refit;
+using System;
+using System.IO;
 using System.Linq;
 using System.Reflection;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Ailos.ApiMobile.API
 {
@@ -31,7 +34,7 @@ namespace Ailos.ApiMobile.API
             {
                 var errors = context.ModelState
                     .Where(x => x.Value.Errors.Count > 0)
-                    .Select(kvp => new 
+                    .Select(kvp => new
                     {
                         FieldName = kvp.Key,
                         Messages = kvp.Value.Errors.Select(x => x.ErrorMessage)
@@ -41,17 +44,32 @@ namespace Ailos.ApiMobile.API
             }
 
             services.AddControllers()
-                .ConfigureApiBehaviorOptions(options => 
+                .ConfigureApiBehaviorOptions(options =>
                 {
                     //options.InvalidModelStateResponseFactory = InvalidModelStateResponseFactory;
                 });
 
+            services.AddRouting(options => options.LowercaseUrls = true);
+
             services.AddSwaggerGen(c =>
             {
+                var fullPath = Path.Combine(
+                    AppDomain.CurrentDomain.BaseDirectory,
+                    typeof(Startup).GetTypeInfo().Assembly.GetName().Name + ".xml");
+                
+                c.IncludeXmlComments(fullPath);
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Ailos.ApiMobile.API", Version = "v1" });
+                c.SwaggerDoc("v2", new OpenApiInfo { Title = "Ailos.ApiMobile.API", Version = "v2" });
             });
 
-            services.AddFluentValidation(options => 
+            services.AddApiVersioning(options => options.ReportApiVersions = true);
+            services.AddVersionedApiExplorer(options =>
+            {
+                options.GroupNameFormat = "'v'VVV";
+                options.SubstituteApiVersionInUrl = true;
+            });
+
+            services.AddFluentValidation(options =>
             {
                 options.DisableDataAnnotationsValidation = true;
                 options.RegisterValidatorsFromAssembly(Assembly.Load("Ailos.Pix"));
@@ -61,7 +79,7 @@ namespace Ailos.ApiMobile.API
             services.AddElmah();
 
             services.AddRefitClient<Pix.Application.Refit.IKeyService>()
-                .ConfigureHttpClient(options => options.BaseAddress = new System.Uri(""));
+                .ConfigureHttpClient(options => options.BaseAddress = new Uri(""));
 
             services.AddScoped<IKeyService, KeyService>();
 
@@ -76,7 +94,11 @@ namespace Ailos.ApiMobile.API
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Ailos.ApiMobile.API v1"));
+                app.UseSwaggerUI(c =>
+                {
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Ailos.ApiMobile.API v1");
+                    c.SwaggerEndpoint("/swagger/v2/swagger.json", "Ailos.ApiMobile.API v2");
+                });
             }
 
             app.UseHttpsRedirection();

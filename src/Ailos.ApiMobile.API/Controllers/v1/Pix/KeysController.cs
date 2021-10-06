@@ -1,31 +1,39 @@
 ﻿using Ailos.Pix.DTO.Key;
 using Ailos.Pix.Services;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
 
 namespace Ailos.ApiMobile.API.Controllers.v1.Pix
 {
-    [Route("api/[controller]")]
     [ApiController]
+    //[ApiVersion("1.0")]
+    //[ApiVersion("2.0")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     public class KeysController : ControllerBase
     {
+        private readonly ILogger<KeysController> _logger;
         private readonly IKeyService _keyService;
 
-        public KeysController(IKeyService keyService)
+        public KeysController(IKeyService keyService, ILogger<KeysController> logger)
         {
             _keyService = keyService;
+            _logger = logger;
         }
 
+        /// <summary>
+        /// Adiciona uma nova chave
+        /// </summary>
+        /// <param name="newKeyRequest">Objeto de requisição</param>
+        /// <returns></returns>
         [HttpPost]
-        public async Task<NewKeyResponse> AddKey(NewKeyRequest newKeyRequest)
+        [ProducesResponseType(typeof(NewKeyResponse), StatusCodes.Status200OK)]
+        public async Task<IActionResult> AddKey(NewKeyRequest newKeyRequest)
         {
-            return await _keyService.AddKey(newKeyRequest);
-        }
+            _logger.LogInformation("Adicionando nova chave");
 
-        [HttpGet("throwing-exception")]
-        public void ThrowException()
-        {
-            throw new System.Exception("Deu ruim proposital!");
+            return Ok(await _keyService.AddKey(newKeyRequest));
         }
     }
 }

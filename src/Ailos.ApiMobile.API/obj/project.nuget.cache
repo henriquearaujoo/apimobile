@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FExum8M9/QoyWEe1Te72QKNKIqoxon1zCrUdbe0bv/6ksmYDAGJqipYXcQYBj7+WI60ipbbixUDIh6DWAdjlug==",
+  "dgSpecHash": "8I57ozQftZzB2jdxsmeIhhdPqeWHdyE59UeOt8JnYnCdtGdALmYFneQYD1//vROw7+o1Z09eyazMSYjnuM0NBA==",
   "success": true,
   "projectFilePath": "C:\\Users\\sandro.nyland\\source\\workspace\\Ailos\\apimobile\\src\\Ailos.ApiMobile.API\\Ailos.ApiMobile.API.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,8 @@
     "C:\\Users\\sandro.nyland\\.nuget\\packages\\microsoft.aspnetcore.http\\2.2.2\\microsoft.aspnetcore.http.2.2.2.nupkg.sha512",
     "C:\\Users\\sandro.nyland\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\sandro.nyland\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+    "C:\\Users\\sandro.nyland\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.0.0\\microsoft.aspnetcore.mvc.versioning.5.0.0.nupkg.sha512",
+    "C:\\Users\\sandro.nyland\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning.apiexplorer\\5.0.0\\microsoft.aspnetcore.mvc.versioning.apiexplorer.5.0.0.nupkg.sha512",
     "C:\\Users\\sandro.nyland\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.2.0\\microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
     "C:\\Users\\sandro.nyland\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\sandro.nyland\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\2.2.0\\microsoft.extensions.configuration.abstractions.2.2.0.nupkg.sha512",

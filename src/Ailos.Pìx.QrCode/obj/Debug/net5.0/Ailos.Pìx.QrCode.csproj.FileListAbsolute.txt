@@ -20,3 +20,4 @@ C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.Pìx.QrCode\ob
 C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.Pìx.QrCode\obj\Debug\net5.0\Ailos.Pìx.QrCode.dll
 C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.Pìx.QrCode\obj\Debug\net5.0\ref\Ailos.Pìx.QrCode.dll
 C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.Pìx.QrCode\obj\Debug\net5.0\Ailos.Pìx.QrCode.pdb
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.Pìx.QrCode\obj\Debug\net5.0\Ailos.Pìx.QrCode.csproj.AssemblyReference.cache
