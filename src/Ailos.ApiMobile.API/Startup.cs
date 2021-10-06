@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Refit;
 using System.Linq;
 using System.Reflection;
 
@@ -58,6 +59,9 @@ namespace Ailos.ApiMobile.API
             });
 
             services.AddElmah();
+
+            services.AddRefitClient<Pix.Application.Refit.IKeyService>()
+                .ConfigureHttpClient(options => options.BaseAddress = new System.Uri(""));
 
             services.AddScoped<IKeyService, KeyService>();
 

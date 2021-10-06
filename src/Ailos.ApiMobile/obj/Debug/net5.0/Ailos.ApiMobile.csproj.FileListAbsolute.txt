@@ -102,3 +102,5 @@ C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.ApiMobile\bin\
 C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.ApiMobile\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
 C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.ApiMobile\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.ApiMobile\obj\Debug\net5.0\Ailos.ApiMobile.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.ApiMobile\bin\Debug\net5.0\Refit.dll
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.ApiMobile\bin\Debug\net5.0\Refit.HttpClientFactory.dll
