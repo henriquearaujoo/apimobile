@@ -21,5 +21,11 @@ namespace Ailos.ApiMobile.API.Controllers.v1.Pix
         {
             return await _keyService.AddKey(newKeyRequest);
         }
+
+        [HttpGet("throwing-exception")]
+        public void ThrowException()
+        {
+            throw new System.Exception("Deu ruim proposital!");
+        }
     }
 }

@@ -30,3 +30,16 @@ C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.ApiMobile.API\
 C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.ApiMobile.API\obj\Debug\net5.0\ref\Ailos.ApiMobile.API.dll
 C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.ApiMobile.API\obj\Debug\net5.0\Ailos.ApiMobile.API.pdb
 C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.ApiMobile.API\obj\Debug\net5.0\Ailos.ApiMobile.API.genruntimeconfig.cache
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.ApiMobile.API\bin\Debug\net5.0\FluentValidation.dll
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.ApiMobile.API\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.ApiMobile.API\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.ApiMobile.API\bin\Debug\net5.0\ElmahCore.Mvc.dll
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.ApiMobile.API\bin\Debug\net5.0\ElmahCore.dll
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.ApiMobile.API\bin\Debug\net5.0\HtmlAgilityPack.dll
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.ApiMobile.API\bin\Debug\net5.0\System.Data.SqlClient.dll
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.ApiMobile.API\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.ApiMobile.API\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.ApiMobile.API\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.ApiMobile.API\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.ApiMobile.API\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.ApiMobile.API\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

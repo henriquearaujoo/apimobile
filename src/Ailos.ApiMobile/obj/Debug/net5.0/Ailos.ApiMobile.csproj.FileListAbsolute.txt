@@ -98,3 +98,7 @@ C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.ApiMobile\obj\
 C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.ApiMobile\obj\Debug\net5.0\ref\Ailos.ApiMobile.dll
 C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.ApiMobile\obj\Debug\net5.0\Ailos.ApiMobile.pdb
 C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.ApiMobile\obj\Debug\net5.0\Ailos.ApiMobile.genruntimeconfig.cache
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.ApiMobile\bin\Debug\net5.0\FluentValidation.dll
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.ApiMobile\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.ApiMobile\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.ApiMobile\obj\Debug\net5.0\Ailos.ApiMobile.MvcApplicationPartsAssemblyInfo.cs

@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "1CNMwr/uV1e1LZx28jmB1xzn7iT2631g+gYL527RjdhJxoZ/bhi42GJ+fWihdj6bwL9Fz8+Ky+57BWdnTHBruA==",
+  "dgSpecHash": "Lnh30LFw335dGrXp5rB/Z+9lPUvXkf4RH7fX5zBkfF86qEVd/Tpo8HTyoid0AMmXaWGpifWyJjEdhERObO5q5w==",
   "success": true,
   "projectFilePath": "C:\\Users\\sandro.nyland\\source\\workspace\\Ailos\\apimobile\\src\\Ailos.Pix\\Ailos.Pix.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\sandro.nyland\\.nuget\\packages\\fluentvalidation\\10.3.3\\fluentvalidation.10.3.3.nupkg.sha512",
+    "C:\\Users\\sandro.nyland\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.3.3\\fluentvalidation.aspnetcore.10.3.3.nupkg.sha512",
+    "C:\\Users\\sandro.nyland\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.3\\fluentvalidation.dependencyinjectionextensions.10.3.3.nupkg.sha512",
+    "C:\\Users\\sandro.nyland\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
+  ],
   "logs": []
 }

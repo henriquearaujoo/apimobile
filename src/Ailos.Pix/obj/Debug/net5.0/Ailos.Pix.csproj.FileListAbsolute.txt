@@ -24,7 +24,6 @@ C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.Pix\obj\Debug\
 C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.Pix\obj\Debug\net5.0\Ailos.Pix.AssemblyInfoInputs.cache
 C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.Pix\obj\Debug\net5.0\Ailos.Pix.AssemblyInfo.cs
 C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.Pix\obj\Debug\net5.0\Ailos.Pix.csproj.CoreCompileInputs.cache
-C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.Pix\obj\Debug\net5.0\Ailos.Pix.csproj.CopyComplete
 C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.Pix\obj\Debug\net5.0\Ailos.Pix.dll
 C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.Pix\obj\Debug\net5.0\ref\Ailos.Pix.dll
 C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.Pix\obj\Debug\net5.0\Ailos.Pix.pdb
