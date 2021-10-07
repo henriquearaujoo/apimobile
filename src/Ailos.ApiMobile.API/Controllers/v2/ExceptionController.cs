@@ -22,7 +22,7 @@ namespace Ailos.ApiMobile.API.Controllers.v2
         /// </summary>
         [HttpPost("throw")]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public void ThrowException()
+        public void Throw()
         {
             try
             {

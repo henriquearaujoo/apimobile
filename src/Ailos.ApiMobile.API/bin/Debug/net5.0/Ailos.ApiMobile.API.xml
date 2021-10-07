@@ -11,7 +11,7 @@
             <param name="newKeyRequest">Objeto de requisição</param>
             <returns></returns>
         </member>
-        <member name="M:Ailos.ApiMobile.API.Controllers.v2.ExceptionController.ThrowException">
+        <member name="M:Ailos.ApiMobile.API.Controllers.v2.ExceptionController.Throw">
             <summary>
             Gera uma exceção
             </summary>

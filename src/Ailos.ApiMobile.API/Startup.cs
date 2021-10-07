@@ -13,7 +13,6 @@ using System;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace Ailos.ApiMobile.API
 {
@@ -56,7 +55,7 @@ namespace Ailos.ApiMobile.API
                 var fullPath = Path.Combine(
                     AppDomain.CurrentDomain.BaseDirectory,
                     typeof(Startup).GetTypeInfo().Assembly.GetName().Name + ".xml");
-                
+
                 c.IncludeXmlComments(fullPath);
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Ailos.ApiMobile.API", Version = "v1" });
                 c.SwaggerDoc("v2", new OpenApiInfo { Title = "Ailos.ApiMobile.API", Version = "v2" });
@@ -100,6 +99,8 @@ namespace Ailos.ApiMobile.API
                     c.SwaggerEndpoint("/swagger/v2/swagger.json", "Ailos.ApiMobile.API v2");
                 });
             }
+
+            app.UseExceptionHandler("/error");
 
             app.UseHttpsRedirection();
 
