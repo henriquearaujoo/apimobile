@@ -11,7 +11,7 @@ namespace Ailos.Pix.Services
     {
         private readonly IClient _client;
 
-        public KeyService(IClient client)
+        public KeyService(/*IClient client*/)
         {
             _client = new WebSpeedClient();
         }

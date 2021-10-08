@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Ailos.Pix.DTO.Key
+﻿namespace Ailos.Pix.DTO.Key
 {
-    public class NewKeyRequest
+    public record NewKeyRequest
     {
-        public int CodeType { get; set; }
-        public string Description { get; set; }
-        public bool Favorite { get; set; }
-        public string SessionID { get; set; }
+        public int CodeType { get; init; }
+        
+        public string Description { get; init; }
+        
+        public bool Favorite { get; init; }
 
+        public string SessionID { get; init; }
     }
 }

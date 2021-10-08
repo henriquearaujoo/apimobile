@@ -1,22 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Ailos.Pix.DTO.Key
+﻿namespace Ailos.Pix.DTO.Key
 {
-    public class NewKeyResponse
+    public record NewKeyResponse
     {
-        public int Id { get; set; }
-        public int CooperativeCode { get; set; }
-        public int Account { get; set; }
-        public int CodeHolder { get; set; }
-        public string Description { get; set; }
-        public string Status { get; set; }
-        public int CodeType { get; set; }
-        public string SourceId { get; set; }
-        public string CreationDate { get; set; }
-        public bool OutDate { get; set; }
-        public bool Portability { get; set; }
-        public bool Claim { get; set; }
+        public int Id { get; init; }
+        public int CooperativeCode { get; init; }
+        public int Account { get; init; }
+        public int CodeHolder { get; init; }
+        public string Description { get; init; }
+        public string Status { get; init; }
+        public int CodeType { get; init; }
+        public string SourceId { get; init; }
+        public string CreationDate { get; init; }
+        public bool OutDate { get; init; }
+        public bool Portability { get; init; }
     }
 }

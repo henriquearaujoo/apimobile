@@ -1,8 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "u8WaI/+YHAyGuzsASkJzS+SfIBl5iDd8oJwIP4ZtOnWrCvehdgrEGATVgV9CWFPUxuhXOy6s9YRgPlLdLKx1WQ==",
+  "dgSpecHash": "M1mJTBLSjVNouMxLLuWaDo3Fz1wDWgks/GOPZ+7MdsRKFfokku+29j2ZyXWVQAL5cwke1q4ckHy48PIgwqOHgw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Henrique\\Documents\\projetos\\ailos\\ApiMobile\\src\\Ailos.IoC\\Ailos.IoC.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\sandro.nyland\\source\\workspace\\Ailos\\apimobile\\src\\Ailos.IoC\\Ailos.IoC.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sandro.nyland\\.nuget\\packages\\fluentvalidation\\10.3.3\\fluentvalidation.10.3.3.nupkg.sha512",
+    "C:\\Users\\sandro.nyland\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.3.3\\fluentvalidation.aspnetcore.10.3.3.nupkg.sha512",
+    "C:\\Users\\sandro.nyland\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.3\\fluentvalidation.dependencyinjectionextensions.10.3.3.nupkg.sha512",
+    "C:\\Users\\sandro.nyland\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.0\\microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",
+    "C:\\Users\\sandro.nyland\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\sandro.nyland\\.nuget\\packages\\microsoft.extensions.http\\5.0.0\\microsoft.extensions.http.5.0.0.nupkg.sha512",
+    "C:\\Users\\sandro.nyland\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
+    "C:\\Users\\sandro.nyland\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\sandro.nyland\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "C:\\Users\\sandro.nyland\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\sandro.nyland\\.nuget\\packages\\refit\\6.0.94\\refit.6.0.94.nupkg.sha512",
+    "C:\\Users\\sandro.nyland\\.nuget\\packages\\refit.httpclientfactory\\6.0.94\\refit.httpclientfactory.6.0.94.nupkg.sha512",
+    "C:\\Users\\sandro.nyland\\.nuget\\packages\\system.net.http.json\\5.0.0\\system.net.http.json.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

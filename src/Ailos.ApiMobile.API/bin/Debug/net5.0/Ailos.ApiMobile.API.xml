@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ailos.ApiMobile.API</name>
+    </assembly>
+    <members>
+        <member name="M:Ailos.ApiMobile.API.Controllers.v1.Pix.KeysController.AddKey(Ailos.Pix.DTO.Key.NewKeyRequest)">
+            <summary>
+            Adiciona uma nova chave
+            </summary>
+            <param name="newKeyRequest">Objeto de requisição</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ailos.ApiMobile.API.Controllers.v2.ExceptionController.Throw">
+            <summary>
+            Gera uma exceção
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.InstallerExtensions.AddInstallers(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Adiocina os installers no assembly <see cref="M:System.Reflection.Assembly.GetExecutingAssembly"/>
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

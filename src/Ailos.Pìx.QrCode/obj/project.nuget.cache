@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lqCpOCbU5NZwqZ0jVoLe1G1CflsrOcD2dL96+o9AbW23rfah7pL11HRyLvaxSAchaokHUNztR2I39CVBu6nxZQ==",
+  "dgSpecHash": "BuaF92BcH0xVGTE4ePGc2BageoqkipPgfV4MaYqSLCa5aOWgcIgo4EaTsTZ8HCqVArC9/n8pYU99rBdbog8zsQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Henrique\\Documents\\projetos\\ailos\\ApiMobile\\src\\Ailos.Pìx.QrCode\\Ailos.Pìx.QrCode.csproj",
+  "projectFilePath": "C:\\Users\\sandro.nyland\\source\\workspace\\Ailos\\apimobile\\src\\Ailos.Pìx.QrCode\\Ailos.Pìx.QrCode.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
