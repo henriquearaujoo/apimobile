@@ -16,5 +16,13 @@
             Gera uma exceção
             </summary>
         </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.InstallerExtensions.AddInstallers(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Adiocina os installers no assembly <see cref="M:System.Reflection.Assembly.GetExecutingAssembly"/>
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+            <returns></returns>
+        </member>
     </members>
 </doc>

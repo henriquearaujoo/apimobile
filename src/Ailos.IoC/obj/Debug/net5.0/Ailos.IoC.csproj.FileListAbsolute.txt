@@ -39,3 +39,4 @@ C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.IoC\obj\Debug\
 C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.IoC\obj\Debug\net5.0\Ailos.IoC.dll
 C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.IoC\obj\Debug\net5.0\ref\Ailos.IoC.dll
 C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.IoC\obj\Debug\net5.0\Ailos.IoC.pdb
+C:\Users\sandro.nyland\source\workspace\Ailos\apimobile\src\Ailos.IoC\obj\Debug\net5.0\Ailos.IoC.csproj.CopyComplete
