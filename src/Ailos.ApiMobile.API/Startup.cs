@@ -8,7 +8,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using Refit;
 using System;
 using System.IO;
 using System.Linq;
@@ -45,7 +44,7 @@ namespace Ailos.ApiMobile.API
             services.AddControllers()
                 .ConfigureApiBehaviorOptions(options =>
                 {
-                    //options.InvalidModelStateResponseFactory = InvalidModelStateResponseFactory;
+                    options.InvalidModelStateResponseFactory = InvalidModelStateResponseFactory;
                 });
 
             services.AddRouting(options => options.LowercaseUrls = true);
@@ -76,9 +75,6 @@ namespace Ailos.ApiMobile.API
             });
 
             services.AddElmah();
-
-            services.AddRefitClient<Pix.Application.Refit.IKeyService>()
-                .ConfigureHttpClient(options => options.BaseAddress = new Uri(""));
 
             services.AddScoped<IKeyService, KeyService>();
 

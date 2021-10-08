@@ -11,7 +11,7 @@ namespace Microsoft.Extensions.DependencyInjection
         public static IServiceCollection AddInstallers(this IServiceCollection services, IConfiguration configuration)
         {
             var installers = Assembly.GetExecutingAssembly().ExportedTypes
-                .Where(x => typeof(IInstaller).IsAssignableFrom(x) && !x.IsAbstract && x.IsInterface)
+                .Where(x => typeof(IInstaller).IsAssignableFrom(x) && !x.IsAbstract && !x.IsInterface)
                 .Select(Activator.CreateInstance)
                 .Cast<IInstaller>();
 

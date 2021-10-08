@@ -1,5 +1,5 @@
-﻿using Ailos.Pix.DTO.Key;
-using Ailos.Pix.Services;
+﻿using Ailos.Pix.Application.Refit;
+using Ailos.Pix.DTO.Key;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -16,10 +16,10 @@ namespace Ailos.ApiMobile.API.Controllers.v1.Pix
         private readonly ILogger<KeysController> _logger;
         private readonly IKeyService _keyService;
 
-        public KeysController(IKeyService keyService, ILogger<KeysController> logger)
+        public KeysController(ILogger<KeysController> logger, IKeyService keyService)
         {
-            _keyService = keyService;
             _logger = logger;
+            _keyService = keyService;
         }
 
         /// <summary>
