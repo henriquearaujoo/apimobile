@@ -33,7 +33,7 @@ namespace Ailos.ApiMobile.API.Installers
         private IActionResult InvalidModelStateResponseFactory(ActionContext context)
         {
             var errors = context.ModelState
-                .Where(x => x.Value.Errors.Count > 0)
+                .Where(kvp => kvp.Value.Errors.Count > 0)
                 .Select(kvp => new
                 {
                     FieldName = kvp.Key,

@@ -25,15 +25,15 @@ namespace Ailos.ApiMobile.API.Controllers.v1.Pix
         /// <summary>
         /// Adiciona uma nova chave
         /// </summary>
-        /// <param name="newKeyRequest">Objeto de requisição</param>
+        /// <param name="request">Objeto de requisição</param>
         /// <returns></returns>
         [HttpPost]
         [ProducesResponseType(typeof(NewKeyResponse), StatusCodes.Status200OK)]
-        public async Task<IActionResult> AddKey(NewKeyRequest newKeyRequest)
+        public async Task<IActionResult> AddKey(NewKeyRequest request)
         {
             _logger.LogInformation("Adicionando nova chave");
 
-            return Ok(await _keyService.AddKey(newKeyRequest));
+            return Ok(await _keyService.AddKey(request));
         }
     }
 }
