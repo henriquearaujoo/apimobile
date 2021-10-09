@@ -1,4 +1,4 @@
-﻿using Ailos.ApiMobile.API.Installers;
+﻿using Ailos.ApiMobile.Installers;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Linq;

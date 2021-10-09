@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>Ailos.ApiMobile.API</name>
+        <name>Ailos.ApiMobile</name>
     </assembly>
     <members>
-        <member name="M:Ailos.ApiMobile.API.Controllers.v1.Pix.KeysController.AddKey(Ailos.Pix.DTO.Key.NewKeyRequest)">
+        <member name="M:Ailos.ApiMobile.Controllers.v1.Pix.KeysController.AddKey(Ailos.Pix.DTO.Key.NewKeyRequest)">
             <summary>
             Adiciona uma nova chave
             </summary>
             <param name="newKeyRequest">Objeto de requisição</param>
             <returns></returns>
         </member>
-        <member name="M:Ailos.ApiMobile.API.Controllers.v1.Pix.KeysController.ThrowException">
+        <member name="M:Ailos.ApiMobile.Controllers.v1.Pix.KeysController.ThrowException">
             <summary>
             Gera uma exceção
             </summary>

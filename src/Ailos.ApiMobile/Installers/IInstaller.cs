@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Ailos.ApiMobile.API.Installers
+namespace Ailos.ApiMobile.Installers
 {
     public interface IInstaller
     {

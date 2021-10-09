@@ -5,7 +5,7 @@ using System;
 using System.IO;
 using System.Reflection;
 
-namespace Ailos.ApiMobile.API.Installers
+namespace Ailos.ApiMobile.Installers
 {
     public class SwaggerInstaller : IInstaller
     {
@@ -19,8 +19,8 @@ namespace Ailos.ApiMobile.API.Installers
 
                 c.IncludeXmlComments(fullPath);
 
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Ailos.ApiMobile.API", Version = "v1" });
-                c.SwaggerDoc("v2", new OpenApiInfo { Title = "Ailos.ApiMobile.API", Version = "v2" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Ailos.ApiMobile", Version = "v1" });
+                c.SwaggerDoc("v2", new OpenApiInfo { Title = "Ailos.ApiMobile", Version = "v2" });
             });
         }
     }

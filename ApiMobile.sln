@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApp", "WebApp", "{EAEEB414-59C9-41F7-B99C-18A94D7FC465}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ailos.ApiMobile", "src\Ailos.ApiMobile\Ailos.ApiMobile.csproj", "{6407A86E-E970-4BA7-A89F-C3C18FB57E1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ailos.ApiMobile_old", "src\Ailos.ApiMobile_old\Ailos.ApiMobile_old.csproj", "{6407A86E-E970-4BA7-A89F-C3C18FB57E1A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{799A0A84-C71B-4EF9-BE0A-9CC6E727C6A2}"
 EndProject
@@ -41,7 +41,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CDC", "CDC", "{C8FE2B30-7AB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ailos.IoC", "src\Ailos.IoC\Ailos.IoC.csproj", "{4849A00B-50F4-4074-91C0-17036A6DE6BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ailos.ApiMobile.API", "src\Ailos.ApiMobile.API\Ailos.ApiMobile.API.csproj", "{65EF1031-8A1F-4543-B620-CD5EE970B42C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ailos.ApiMobile", "src\Ailos.ApiMobile\Ailos.ApiMobile.csproj", "{65EF1031-8A1F-4543-B620-CD5EE970B42C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

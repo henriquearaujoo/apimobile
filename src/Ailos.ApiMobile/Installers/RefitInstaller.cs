@@ -4,7 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Refit;
 using System;
 
-namespace Ailos.ApiMobile.API.Installers
+namespace Ailos.ApiMobile.Installers
 {
     public class RefitInstaller : IInstaller
     {

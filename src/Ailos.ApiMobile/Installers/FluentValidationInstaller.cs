@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
-namespace Ailos.ApiMobile.API.Installers
+namespace Ailos.ApiMobile.Installers
 {
     public class FluentValidationInstaller : IInstaller
     {

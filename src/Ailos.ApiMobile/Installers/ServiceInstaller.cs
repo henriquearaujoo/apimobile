@@ -1,14 +1,14 @@
-﻿using ElmahCore.Mvc;
+﻿using Ailos.Pix.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Ailos.ApiMobile.API.Installers
+namespace Ailos.ApiMobile.Installers
 {
-    public class ElmahInstaller : IInstaller
+    public class ServiceInstaller : IInstaller
     {
         public void InstallerServices(IServiceCollection services, IConfiguration configuration)
         {
-            services.AddElmah();
+            services.AddScoped<IKeyService, KeyService>();
         }
     }
 }

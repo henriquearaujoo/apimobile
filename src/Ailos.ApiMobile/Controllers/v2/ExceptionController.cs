@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 
-namespace Ailos.ApiMobile.API.Controllers.v2
+namespace Ailos.ApiMobile.Controllers.v2
 {
     [ApiController]
     [ApiVersion("2.0")]

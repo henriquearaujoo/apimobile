@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
 
-namespace Ailos.ApiMobile.API.Controllers.v1.Pix
+namespace Ailos.ApiMobile.Controllers.v1.Pix
 {
     [ApiController]
     //[ApiVersion("1.0")]
