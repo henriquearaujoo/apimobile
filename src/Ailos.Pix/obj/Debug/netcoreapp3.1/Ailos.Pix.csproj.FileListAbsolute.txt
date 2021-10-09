@@ -1,4 +1,0 @@
-C:\Users\Henrique\Documents\projetos\ailos\ApiMobile\src\Ailos.Pix\obj\Debug\netcoreapp3.1\Ailos.Pix.csproj.AssemblyReference.cache
-C:\Users\Henrique\Documents\projetos\ailos\ApiMobile\src\Ailos.Pix\obj\Debug\netcoreapp3.1\Ailos.Pix.AssemblyInfoInputs.cache
-C:\Users\Henrique\Documents\projetos\ailos\ApiMobile\src\Ailos.Pix\obj\Debug\netcoreapp3.1\Ailos.Pix.AssemblyInfo.cs
-C:\Users\Henrique\Documents\projetos\ailos\ApiMobile\src\Ailos.Pix\obj\Debug\netcoreapp3.1\Ailos.Pix.csproj.CoreCompileInputs.cache
