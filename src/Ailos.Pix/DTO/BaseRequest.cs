@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Ailos.Pix.DTO
+﻿namespace Ailos.Pix.DTO
 {
     public abstract class BaseRequest
     {

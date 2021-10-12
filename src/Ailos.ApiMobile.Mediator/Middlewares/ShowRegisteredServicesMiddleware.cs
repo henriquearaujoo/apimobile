@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -26,7 +27,7 @@ namespace Ailos.ApiMobile.Mediator.Middlewares
             sb.Append("<tr><th>Type</th><th>Lifetime</th><th>Instance</th></tr>");
             sb.Append("</thead><tbody>");
 
-            foreach (var service in _options.Services)
+            foreach (var service in _options.Services.Where(x => x.ServiceType.FullName.StartsWith("Ailos.")))
             {
                 sb.Append("<tr>");
                 sb.Append($"<td>{service.ServiceType.FullName}</td>");

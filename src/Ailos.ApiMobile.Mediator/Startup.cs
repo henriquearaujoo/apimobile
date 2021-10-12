@@ -1,16 +1,16 @@
+using Ailos.Http.Data;
+using Ailos.Pix.Cadastro.Data;
+using Ailos.Pix.Chave.Data;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Refit;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Net.Http;
 
 namespace Ailos.ApiMobile.Mediator
 {
@@ -31,6 +31,24 @@ namespace Ailos.ApiMobile.Mediator
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Ailos.ApiMobile.Mediator", Version = "v1" });
             });
+
+            services.AddMediatR(typeof(Startup));
+
+            var url = Configuration.GetValue<string>("WSO2:BaseURL");
+            var environment = Configuration.GetValue<string>("WSO2:Environment");
+
+            Action<HttpClient> clientConfiguration =
+                options => options.BaseAddress = new Uri(url + environment);
+
+            services.AddRefitClient<IWso2DataService>()
+                .ConfigureHttpClient(options => options.BaseAddress = new Uri(url));
+
+            services.AddRefitClient<IKeyDataService>()
+                .ConfigureHttpClient(clientConfiguration);
+
+            services.AddRefitClient<IRegistrationDataService>()
+                .ConfigureHttpClient(clientConfiguration)
+                .AddHttpMessageHandler<AuthHeaderHandler>();
 
             services.AddShowRegisteredServices();
         }
