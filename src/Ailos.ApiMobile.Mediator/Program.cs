@@ -1,8 +1,13 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace Ailos.ApiMobile
+namespace Ailos.ApiMobile.Mediator
 {
     public class Program
     {
@@ -13,13 +18,6 @@ namespace Ailos.ApiMobile
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-                .ConfigureAppConfiguration((host, configure) =>
-                {
-                    configure.SetBasePath(host.HostingEnvironment.ContentRootPath);
-                    configure.AddJsonFile("appsettings.json", true, true);
-                    configure.AddJsonFile($"appsettings.{host.HostingEnvironment.EnvironmentName}.json", false, true);
-                    configure.AddEnvironmentVariables();
-                })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
