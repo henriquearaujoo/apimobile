@@ -11,7 +11,7 @@ namespace Ailos.Http
 
         public Wso2Client()
         {
-            _http = new RestClientAdapter();
+            _http = new RestSharpAdapter();
         }
 
         public async Task<T> Delete<T>(string url, object body, Dictionary<string, object> queryParams, Dictionary<string, object> pathParams, Dictionary<string, object> headerParams) where T : new()

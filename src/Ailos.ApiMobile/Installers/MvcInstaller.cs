@@ -15,18 +15,18 @@ namespace Ailos.ApiMobile.Installers
                     options.InvalidModelStateResponseFactory = InvalidModelStateResponseFactory;
                 });
 
-            services.AddRouting(options => options.LowercaseUrls = true);
+            //services.AddRouting(options => options.LowercaseUrls = true);
 
-            services.AddApiVersioning(options =>
-            {
-                options.ReportApiVersions = true;
-            });
+            //services.AddApiVersioning(options =>
+            //{
+            //    options.ReportApiVersions = true;
+            //});
 
-            services.AddVersionedApiExplorer(options =>
-            {
-                options.GroupNameFormat = "'v'VVV";
-                options.SubstituteApiVersionInUrl = true;
-            });
+            //services.AddVersionedApiExplorer(options =>
+            //{
+            //    options.GroupNameFormat = "'v'VVV";
+            //    options.SubstituteApiVersionInUrl = true;
+            //});
         }
 
         // Response personalizado para a vailidação dos requests

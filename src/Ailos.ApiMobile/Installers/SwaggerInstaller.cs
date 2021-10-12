@@ -20,7 +20,7 @@ namespace Ailos.ApiMobile.Installers
                 c.IncludeXmlComments(fullPath);
 
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Ailos.ApiMobile", Version = "v1" });
-                c.SwaggerDoc("v2", new OpenApiInfo { Title = "Ailos.ApiMobile", Version = "v2" });
+                //c.SwaggerDoc("v2", new OpenApiInfo { Title = "Ailos.ApiMobile", Version = "v2" });
             });
         }
     }

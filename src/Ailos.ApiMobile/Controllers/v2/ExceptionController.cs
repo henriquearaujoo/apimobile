@@ -6,8 +6,9 @@ using System;
 namespace Ailos.ApiMobile.Controllers.v2
 {
     [ApiController]
-    [ApiVersion("2.0")]
-    [Route("api/v{version:apiVersion}/[controller]")]
+    //[ApiVersion("2.0")]
+    //[Route("api/v{version:apiVersion}/[controller]")]
+    [Route("api/[controller]")]
     public class ExceptionController : ControllerBase
     {
         private readonly ILogger<ExceptionController> _logger;

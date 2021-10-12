@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Refit" Version="6.0.94" />
+    <ProjectReference Include="..\Ailos.Pix\Ailos.Pix.csproj" />
   </ItemGroup>
 
 </Project>

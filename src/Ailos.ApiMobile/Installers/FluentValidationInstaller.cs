@@ -12,7 +12,7 @@ namespace Ailos.ApiMobile.Installers
             services.AddFluentValidation(options =>
             {
                 options.DisableDataAnnotationsValidation = true;
-                options.RegisterValidatorsFromAssembly(Assembly.Load("Ailos.Pix"));
+                options.RegisterValidatorsFromAssembly(Assembly.Load("Ailos.Pix.Chave"));
                 //options.RegisterValidatorsFromAssemblyContaining<Startup>();
             });
         }

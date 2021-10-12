@@ -10,15 +10,21 @@
 		<DocumentationFile></DocumentationFile>
 	</PropertyGroup>
 
+	<PropertyGroup>
+		<IncludeOpenAPIAnalyzers>true</IncludeOpenAPIAnalyzers>
+	</PropertyGroup>
+
 	<ItemGroup>
 		<PackageReference Include="ElmahCore" Version="2.0.7" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Api.Analyzers" Version="2.2.6" />
 		<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
 		<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.2" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\Ailos.Pix\Ailos.Pix.csproj" />
+	  <ProjectReference Include="..\Ailos.Pix.Cadastro\Ailos.Pix.Cadastro.csproj" />
+	  <ProjectReference Include="..\Ailos.Pix.Chave\Ailos.Pix.Chave.csproj" />
 	</ItemGroup>
 
 </Project>

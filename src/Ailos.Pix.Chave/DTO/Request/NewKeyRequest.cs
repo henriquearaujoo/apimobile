@@ -1,4 +1,4 @@
-﻿namespace Ailos.Pix.DTO.Key
+﻿namespace Ailos.Pix.Chave.DTO.Request
 {
     public record NewKeyRequest
     {

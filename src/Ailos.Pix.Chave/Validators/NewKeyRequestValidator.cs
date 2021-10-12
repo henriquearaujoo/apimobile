@@ -1,7 +1,7 @@
-﻿using Ailos.Pix.DTO.Key;
+﻿using Ailos.Pix.Chave.DTO.Request;
 using FluentValidation;
 
-namespace Ailos.Pix.Validators
+namespace Ailos.Pix.Chave.Validators
 {
     public class NewKeyRequestValidator : AbstractValidator<NewKeyRequest>
     {
