@@ -8,8 +8,6 @@ using System.Threading.Tasks;
 
 namespace Ailos.ApiMobile.Controllers.Pix
 {
-    //[Route("api/[controller]")]
-    //[ApiController]
     [ServiceFilter(typeof(Wso2AuthenticationFilter))]
     public class BasePixController : ControllerBase
     {

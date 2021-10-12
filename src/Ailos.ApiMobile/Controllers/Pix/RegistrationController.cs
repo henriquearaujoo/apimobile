@@ -35,7 +35,7 @@ namespace Ailos.ApiMobile.Controllers.Pix
         public async Task<IActionResult> GetParameters()
         {
             _logger.LogInformation("Listando parâmetros pix");
-            return Ok(await _registrationService.ParametersList(new ParametersRequest()
+            return Ok(await _registrationService.ParametersList(new ParametersRequest
             {
                 CodigoCooperativa = 1,
                 CodigoCanal = 10,

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ailos.Pix.DTO
 {
-    public class BaseRequest
+    public abstract class BaseRequest
     {
         public int CodigoCooperativa { get; set; }
         public int? CodigoTitular { get; set; }
