@@ -13,4 +13,8 @@
     <PackageReference Include="Refit.HttpClientFactory" Version="6.0.94" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DTO\" />
+  </ItemGroup>
+
 </Project>

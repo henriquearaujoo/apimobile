@@ -12,8 +12,7 @@ using System.Threading.Tasks;
 
 namespace Ailos.ApiMobile.Controllers.Pix
 {
-    [Route("api/[controller]")]
-    [ApiController]
+    [Route("api/pix/Cadastro")]
     public class RegistrationController : BasePixController
     {
         private readonly ILogger<RegistrationController> _logger;
@@ -25,12 +24,11 @@ namespace Ailos.ApiMobile.Controllers.Pix
             _registrationService = registrationService;
         }
 
-
         /// <summary>
         /// Lista os parâmetros pix
         /// </summary>
         /// <returns></returns>
-        [HttpPost("parameters")]
+        [HttpPost("ListarParametrosPix")]
         [ProducesResponseType(typeof(ParametersResponse), StatusCodes.Status200OK)]
         public async Task<IActionResult> GetParameters()
         {

@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Ailos.Common\Ailos.Common.csproj" />
     <ProjectReference Include="..\Ailos.Http\Ailos.Http.csproj" />
     <ProjectReference Include="..\Ailos.Pix\Ailos.Pix.csproj" />
   </ItemGroup>

@@ -8,8 +8,9 @@ using System.Threading.Tasks;
 
 namespace Ailos.ApiMobile.Controllers.Pix
 {
+    [ApiController]
     [ServiceFilter(typeof(Wso2AuthenticationFilter))]
-    public class BasePixController : ControllerBase
+    public abstract class BasePixController : ControllerBase
     {
     }
 }

@@ -1,4 +1,4 @@
-﻿using Ailos.Pix.DTO;
+﻿using Ailos.Common.DTO.Request;
 using System;
 using System.Collections.Generic;
 using System.Linq;
