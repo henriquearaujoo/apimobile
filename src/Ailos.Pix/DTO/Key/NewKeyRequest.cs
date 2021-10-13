@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Ailos.Pix.DTO.Key
+﻿namespace Ailos.Pix.DTO.Key
 {
     public class NewKeyRequest
     {
@@ -10,6 +6,5 @@ namespace Ailos.Pix.DTO.Key
         public string Description { get; set; }
         public bool Favorite { get; set; }
         public string SessionID { get; set; }
-
     }
 }

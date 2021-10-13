@@ -6,6 +6,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Ailos.IoC\Ailos.IoC.csproj" />
+    <ProjectReference Include="..\Ailos.SOA.CardAutorization\Ailos.SOA.CardAutorization.csproj" />
+    <ProjectReference Include="..\Ailos.SOA.Cartao\Ailos.SOA.Card.csproj" />
+    <ProjectReference Include="..\Ailos.SOA.Loan\Ailos.SOA.Loan.csproj" />
+    <ProjectReference Include="..\Ailos.SOA.PreApprovedCard\Ailos.SOA.PreApprovedCard.csproj" />
   </ItemGroup>
 
 </Project>

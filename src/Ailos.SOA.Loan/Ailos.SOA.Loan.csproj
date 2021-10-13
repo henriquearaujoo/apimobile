@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ailos.Http\Ailos.Http.csproj" />
+    <ProjectReference Include="..\Ailos.SOA.ParametersCard\Ailos.SOA.ParametersCard.csproj" />
+    <ProjectReference Include="..\Ailos.SOA\Ailos.SOA.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DTO\Common\" />
+    <Folder Include="DTO\Request\" />
+  </ItemGroup>
+
+</Project>

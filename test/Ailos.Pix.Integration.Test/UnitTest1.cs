@@ -1,4 +1,3 @@
-using System;
 using Xunit;
 
 namespace Ailos.Pix.Integration.Test
@@ -8,7 +7,6 @@ namespace Ailos.Pix.Integration.Test
         [Fact]
         public void Test1()
         {
-
         }
     }
 }

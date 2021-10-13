@@ -1,5 +1,3 @@
-using System;
-
 namespace Ailos.ApiMobile.Models
 {
     public class ErrorViewModel
