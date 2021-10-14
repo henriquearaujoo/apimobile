@@ -1,5 +1,4 @@
-﻿using Ailos.ApiMobile.Filters;
-using Ailos.Pix.Chave.Application;
+﻿using Ailos.Pix.Chave.Application;
 using Ailos.Pix.Chave.DTO.Request;
 using Ailos.Pix.Chave.DTO.Response;
 using Microsoft.AspNetCore.Http;
@@ -14,7 +13,6 @@ namespace Ailos.ApiMobile.Controllers.v1.Pix
     //[ApiVersion("1.0")]
     //[Route("api/v{version:apiVersion}/[controller]")]
     [Route("api/[controller]")]
-    [ServiceFilter(typeof(Wso2AuthenticationFilter))]
     public class KeysController : ControllerBase
     {
         private readonly ILogger<KeysController> _logger;

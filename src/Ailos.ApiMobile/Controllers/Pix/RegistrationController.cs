@@ -11,7 +11,7 @@ namespace Ailos.ApiMobile.Controllers.Pix
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class RegistrationController : BasePixController
+    public class RegistrationController : ControllerBase
     {
         private readonly ILogger<RegistrationController> _logger;
         private readonly IRegistrationService _registrationService;

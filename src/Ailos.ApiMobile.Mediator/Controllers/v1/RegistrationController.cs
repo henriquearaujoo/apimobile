@@ -11,6 +11,7 @@ namespace Ailos.ApiMobile.Mediator.Controllers.v1
 {
     [Route("api/[controller]")]
     [ApiController]
+    //[ServiceFilter(typeof(Wso2AuthenticationFilter))]
     public class RegistrationController : ControllerBase
     {
         private readonly ILogger<RegistrationController> _logger;
@@ -26,7 +27,7 @@ namespace Ailos.ApiMobile.Mediator.Controllers.v1
         /// Lista os parâmetros pix
         /// </summary>
         /// <returns></returns>
-        [HttpPost("parameters")]
+        [HttpGet("parameters")]
         [ProducesResponseType(typeof(ParametersResponse), StatusCodes.Status200OK)]
         public async Task<IActionResult> GetParameters(CancellationToken cancellationToken)
         {

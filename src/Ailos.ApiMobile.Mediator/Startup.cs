@@ -1,3 +1,4 @@
+using Ailos.ApiMobile.Mediator.Configurations;
 using Ailos.Http.Data;
 using Ailos.Pix.Cadastro.Data;
 using Ailos.Pix.Chave.Data;
@@ -37,17 +38,16 @@ namespace Ailos.ApiMobile.Mediator
             var url = Configuration.GetValue<string>("WSO2:BaseURL");
             var environment = Configuration.GetValue<string>("WSO2:Environment");
 
-            Action<HttpClient> clientConfiguration =
-                options => options.BaseAddress = new Uri(url + environment);
+            void ClientConfiguration(HttpClient options) => options.BaseAddress = new Uri(url + environment);
 
             services.AddRefitClient<IWso2DataService>()
                 .ConfigureHttpClient(options => options.BaseAddress = new Uri(url));
 
             services.AddRefitClient<IKeyDataService>()
-                .ConfigureHttpClient(clientConfiguration);
+                .ConfigureHttpClient(ClientConfiguration);
 
             services.AddRefitClient<IRegistrationDataService>()
-                .ConfigureHttpClient(clientConfiguration)
+                .ConfigureHttpClient(ClientConfiguration)
                 .AddHttpMessageHandler<AuthHeaderHandler>();
 
             services.AddTransient<AuthHeaderHandler>();

@@ -14,6 +14,7 @@ namespace Ailos.Pix.Cadastro.Application
         {
             _registrationDataService = registrationDataService;
         }
+
         public async Task<ParametersResponse> ParametersListAsync(ParametersRequest parametersRequest, CancellationToken cancellationToken)
         {
             return await _registrationDataService.ParametersListAsync(parametersRequest, cancellationToken);

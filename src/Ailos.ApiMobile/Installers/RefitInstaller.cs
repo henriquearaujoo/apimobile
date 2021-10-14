@@ -1,4 +1,5 @@
-﻿using Ailos.Http.Data;
+﻿using Ailos.ApiMobile.Configurations;
+using Ailos.Http.Data;
 using Ailos.Pix.Cadastro.Data;
 using Ailos.Pix.Chave.Data;
 using Microsoft.Extensions.Configuration;
@@ -14,25 +15,19 @@ namespace Ailos.ApiMobile.Installers
         public void InstallerServices(IServiceCollection services, IConfiguration configuration)
         {
             var url = configuration.GetValue<string>("WSO2:BaseURL");
+            var environment = configuration.GetValue<string>("WSO2:Environment");
 
-            var config = ConfigureUrl(configuration, url);
+            void ClientConfiguration(HttpClient options) => options.BaseAddress = new Uri(url + environment);
 
             services.AddRefitClient<IWso2DataService>()
                 .ConfigureHttpClient(options => options.BaseAddress = new Uri(url));
 
             services.AddRefitClient<IKeyDataService>()
-                .ConfigureHttpClient(config);
+                .ConfigureHttpClient(ClientConfiguration);
 
             services.AddRefitClient<IRegistrationDataService>()
-                .ConfigureHttpClient(config)
+                .ConfigureHttpClient(ClientConfiguration)
                 .AddHttpMessageHandler<AuthHeaderHandler>();
-        }
-
-        private static Action<HttpClient> ConfigureUrl(IConfiguration configuration, string url)
-        {
-            var environment = configuration.GetValue<string>("WSO2:Environment");
-
-            return options => options.BaseAddress = new Uri(url + environment);
         }
     }
 }
