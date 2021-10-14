@@ -27,4 +27,8 @@
 	  <ProjectReference Include="..\Ailos.Pix.Chave\Ailos.Pix.Chave.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Properties\" />
+	</ItemGroup>
+
 </Project>
