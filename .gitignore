@@ -10,7 +10,7 @@
 *.sln.docstates
 
 # Remove o appsettings.json de subir nos PRs
-appsettings.json
+#appsettings.json
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -55,7 +55,7 @@ BenchmarkDotNet.Artifacts/
 project.lock.json
 project.fragment.lock.json
 artifacts/
-**/Properties/launchSettings.json
+#**/Properties/launchSettings.json
 
 # StyleCop
 StyleCopReport.xml

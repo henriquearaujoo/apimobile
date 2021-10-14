@@ -23,6 +23,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <ProjectReference Include="..\Ailos.Autenticacao\Ailos.Autentication.csproj" />
 	  <ProjectReference Include="..\Ailos.Pix.Cadastro\Ailos.Pix.Cadastro.csproj" />
 	  <ProjectReference Include="..\Ailos.Pix.Chave\Ailos.Pix.Chave.csproj" />
 	</ItemGroup>

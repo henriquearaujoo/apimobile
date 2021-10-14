@@ -26,7 +26,7 @@ namespace Ailos.ApiMobile.Controllers.Pix
         /// Lista os parâmetros pix
         /// </summary>
         /// <returns></returns>
-        [HttpPost("parameters")]
+        [HttpPost("ListarParametrosPix")]
         [ProducesResponseType(typeof(ParametersResponse), StatusCodes.Status200OK)]
         public async Task<IActionResult> GetParameters(CancellationToken camcellationToken)
         {

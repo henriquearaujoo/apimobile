@@ -1,4 +1,6 @@
 ﻿using Ailos.ApiMobile.Configurations;
+using Ailos.Autentication.Data;
+using Ailos.Common.Data;
 using Ailos.Http.Data;
 using Ailos.Pix.Cadastro.Data;
 using Ailos.Pix.Chave.Data;
@@ -27,6 +29,14 @@ namespace Ailos.ApiMobile.Installers
 
             services.AddRefitClient<IRegistrationDataService>()
                 .ConfigureHttpClient(ClientConfiguration)
+                .AddHttpMessageHandler<AuthHeaderHandler>();
+
+            services.AddRefitClient<ICooperadoDataService>()
+                .ConfigureHttpClient(clientConfiguration)
+                .AddHttpMessageHandler<AuthHeaderHandler>();
+            
+            services.AddRefitClient<IAuthenticationDataService>()
+                .ConfigureHttpClient(clientConfiguration)
                 .AddHttpMessageHandler<AuthHeaderHandler>();
         }
     }
