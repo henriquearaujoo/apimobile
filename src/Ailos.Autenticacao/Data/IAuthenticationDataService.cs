@@ -12,6 +12,6 @@ namespace Ailos.Autentication.Data
     public interface IAuthenticationDataService
     {
         [Get("/ailos/autenticacao/api/v1/comun/autenticar")]
-        Task<Token> Authenticate(AuthenticationRequest request);
+        Task<ApiResponse<Token>> Authenticate(AuthenticationRequest request);
     }
 }

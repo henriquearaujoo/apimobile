@@ -1,11 +1,11 @@
-﻿using Ailos.Autentication.DTO.Request;
-using Ailos.Autentication.DTO.Response;
+﻿using Ailos.Autentication.DTO.Response;
+using Ailos.Autentication.ViewModel;
 using System.Threading.Tasks;
 
 namespace Ailos.Autentication.Application
 {
     public interface IAuthenticationService
     {
-        Task<Token> Authenticate(AuthenticationRequest request);
+        Task<Token> AuthenticateAsync(AuthenticationViewModel request);
     }
 }

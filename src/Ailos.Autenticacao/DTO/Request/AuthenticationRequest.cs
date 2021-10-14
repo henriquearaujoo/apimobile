@@ -1,13 +1,12 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Ailos.Autentication.DTO.Request
+﻿namespace Ailos.Autentication.DTO.Request
 {
     public class AuthenticationRequest
     {
-        public Device Dispositivo { get; set; }
-        public Password SenhasAutenticacao { get; set; }
+        public string Senha { get; set; }
+        public string Frase { get; set; }
+        public int CodigoCooperativa { get; set; }
+        public int NumeroConta { get; set; }
+        public int SequencialTitular { get; set; }
+        public string CpfCPNJ { get; set; }
     }
 }

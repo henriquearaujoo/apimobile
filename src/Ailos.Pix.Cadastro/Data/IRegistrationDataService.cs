@@ -12,6 +12,6 @@ namespace Ailos.Pix.Cadastro.Data
     public interface IRegistrationDataService
     {
         [Get("/ailos/pix/api/v1/cadastro/parametro/{request.codigoCooperativa}/{request.codigoCanal}/{request.ipAcionamento}")]
-        Task<ParametersResponse> ParametersList(ParametersRequest request);
+        Task<ParametersResponse> ParametersListAsync(ParametersRequest request);
     }
 }

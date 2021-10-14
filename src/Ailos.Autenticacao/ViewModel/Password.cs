@@ -1,4 +1,4 @@
-﻿namespace Ailos.Autentication.DTO.Request
+﻿namespace Ailos.Autentication.ViewModel
 {
     public class Password
     {

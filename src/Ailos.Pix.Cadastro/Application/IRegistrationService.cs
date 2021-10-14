@@ -10,6 +10,6 @@ namespace Ailos.Pix.Cadastro.Application
 {
     public interface IRegistrationService
     {
-        Task<ParametersResponse> ParametersList(ParametersRequest parametersRequest);
+        Task<ParametersResponse> ParametersListAsync(ParametersRequest parametersRequest);
     }
 }

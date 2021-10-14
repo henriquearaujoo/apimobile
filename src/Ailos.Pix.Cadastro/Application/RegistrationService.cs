@@ -14,9 +14,9 @@ namespace Ailos.Pix.Cadastro.Application
         {
             _registrationDataService = registrationDataService;
         }
-        public async Task<ParametersResponse> ParametersList(ParametersRequest parametersRequest)
+        public async Task<ParametersResponse> ParametersListAsync(ParametersRequest parametersRequest)
         {
-            return await _registrationDataService.ParametersList(parametersRequest);
+            return await _registrationDataService.ParametersListAsync(parametersRequest);
         }
     }
 }

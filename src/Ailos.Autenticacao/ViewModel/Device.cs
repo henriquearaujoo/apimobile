@@ -1,7 +1,7 @@
 ﻿using Ailos.Common.Model;
 using System;
 
-namespace Ailos.Autentication.DTO.Request
+namespace Ailos.Autentication.ViewModel
 {
     public enum TipoAutenticacao
     {

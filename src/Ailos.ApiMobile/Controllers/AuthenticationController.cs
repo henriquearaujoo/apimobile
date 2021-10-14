@@ -2,6 +2,7 @@
 using Ailos.Autentication.Application;
 using Ailos.Autentication.DTO.Request;
 using Ailos.Autentication.DTO.Response;
+using Ailos.Autentication.ViewModel;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -25,9 +26,9 @@ namespace Ailos.ApiMobile.Controllers
         }
 
         [HttpPost("Autenticar")]
-        public async Task<IActionResult> Authenticate(AuthenticationRequest authenticationRequest)
+        public async Task<IActionResult> AuthenticateAsync(AuthenticationViewModel request)
         {
-            var token = await _authenticationService.Authenticate(authenticationRequest);
+            var token = await _authenticationService.AuthenticateAsync(request);
             return Ok(token);
         }
     }

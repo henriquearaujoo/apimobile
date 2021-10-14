@@ -30,10 +30,11 @@ namespace Ailos.ApiMobile.Controllers.Pix
         /// <returns></returns>
         [HttpPost("ListarParametrosPix")]
         [ProducesResponseType(typeof(ParametersResponse), StatusCodes.Status200OK)]
-        public async Task<IActionResult> GetParameters()
+        [ProducesResponseType(typeof(ParametersResponse), StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> GetParametersAsync()
         {
             _logger.LogInformation("Listando parâmetros pix");
-            return Ok(await _registrationService.ParametersList(new ParametersRequest
+            return Ok(await _registrationService.ParametersListAsync(new ParametersRequest
             {
                 CodigoCooperativa = 1,
                 CodigoCanal = 10,

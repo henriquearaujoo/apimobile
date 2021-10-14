@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Ailos.Common\Ailos.Common.csproj" />
+    <ProjectReference Include="..\Ailos.Utils\Ailos.Utils.csproj" />
   </ItemGroup>
 
 </Project>
