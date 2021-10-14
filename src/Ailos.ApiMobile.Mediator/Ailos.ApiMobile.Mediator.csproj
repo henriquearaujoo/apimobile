@@ -12,6 +12,7 @@
   <ItemGroup>
     <Folder Include="Contracts\v1\Notifications\" />
     <Folder Include="Contracts\v1\Queries\" />
+    <Folder Include="Properties\" />
   </ItemGroup>
 
   <ItemGroup>
