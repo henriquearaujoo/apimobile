@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Contracts\v1\Notifications\" />
+    <Folder Include="Contracts\v1\Queries\" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ailos.Pix.Cadastro\Ailos.Pix.Cadastro.csproj" />
+    <ProjectReference Include="..\Ailos.Pix.Chave\Ailos.Pix.Chave.csproj" />
+  </ItemGroup>
+
+</Project>

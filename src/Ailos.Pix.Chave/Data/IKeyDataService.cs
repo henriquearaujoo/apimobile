@@ -1,6 +1,7 @@
 ﻿using Ailos.Pix.Chave.DTO.Request;
 using Ailos.Pix.Chave.DTO.Response;
 using Refit;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Ailos.Pix.Chave.Data
@@ -8,8 +9,9 @@ namespace Ailos.Pix.Chave.Data
     public interface IKeyDataService
     {
         [Post("/")]
-        Task<NewKeyResponse> Add([Body] NewKeyRequest newKeyRequest);
+        Task<NewKeyResponse> AddAsync([Body] NewKeyRequest request, CancellationToken cancellationToken);
+        
         [Get("/")]
-        Task<KeyListResponse> List(KeyListRequest keyListRequest);
+        Task<KeyListResponse> ListAsync(KeyListRequest request, CancellationToken cancellationToken);
     }
 }

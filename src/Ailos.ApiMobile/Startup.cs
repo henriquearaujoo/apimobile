@@ -9,18 +9,12 @@ namespace Ailos.ApiMobile
 {
     public class Startup
     {
-        public IConfiguration Configuration { get; }
-
-        public Startup(IWebHostEnvironment hostingEnvironment)
+        public Startup(IConfiguration configuration)
         {
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(hostingEnvironment.ContentRootPath)
-                .AddJsonFile("appsettings.json", true, true)
-                .AddJsonFile($"appsettings.{hostingEnvironment.EnvironmentName}.json", true, true)
-                .AddEnvironmentVariables();
-
-            Configuration = builder.Build();
+            Configuration = configuration;
         }
+
+        public IConfiguration Configuration { get; }
 
         public void ConfigureServices(IServiceCollection services)
         {

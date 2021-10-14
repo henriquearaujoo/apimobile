@@ -1,7 +1,7 @@
-﻿using Ailos.Http.Data;
-using Ailos.Pix.Chave.Data;
+﻿using Ailos.Pix.Chave.Data;
 using Ailos.Pix.Chave.DTO.Request;
 using Ailos.Pix.Chave.DTO.Response;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Ailos.Pix.Chave.Application
@@ -15,14 +15,14 @@ namespace Ailos.Pix.Chave.Application
             _service = service;
         }
 
-        public async Task<NewKeyResponse> Add(NewKeyRequest newKeyRequest)
+        public async Task<NewKeyResponse> AddKeyAsync(NewKeyRequest newKeyRequest, CancellationToken cancellationToken)
         {
-            return await _service.Add(newKeyRequest);
+            return await _service.AddAsync(newKeyRequest, cancellationToken);
         }
 
-        public async Task<KeyListResponse> List(KeyListRequest keyListRequest)
+        public async Task<KeyListResponse> ListKeysAsync(KeyListRequest keyListRequest, CancellationToken cancellationToken)
         {
-            return await _service.List(keyListRequest);
+            return await _service.ListAsync(keyListRequest, cancellationToken);
         }
     }
 }

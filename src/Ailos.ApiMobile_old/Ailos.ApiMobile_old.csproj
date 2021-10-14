@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <Folder Include="Controllers\Api\Pix\" />
+    <Folder Include="Properties\" />
   </ItemGroup>
 
 </Project>

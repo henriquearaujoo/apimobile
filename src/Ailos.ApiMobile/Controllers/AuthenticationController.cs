@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 namespace Ailos.ApiMobile.Controllers
 {
     [Route("api/Seguranca")]
-    public class AuthenticationController : BasePixController
+    public class AuthenticationController : ControllerBase
     {
         private readonly ILogger<AuthenticationController> _logger;
         private readonly IAuthenticationService _authenticationService;

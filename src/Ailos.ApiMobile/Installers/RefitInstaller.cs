@@ -1,4 +1,5 @@
-﻿using Ailos.Autentication.Data;
+﻿using Ailos.ApiMobile.Configurations;
+using Ailos.Autentication.Data;
 using Ailos.Common.Data;
 using Ailos.Http.Data;
 using Ailos.Pix.Cadastro.Data;
@@ -7,7 +8,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Refit;
 using System;
-using System.IO;
 using System.Net.Http;
 
 namespace Ailos.ApiMobile.Installers
@@ -19,25 +19,24 @@ namespace Ailos.ApiMobile.Installers
             var url = configuration.GetValue<string>("WSO2:BaseURL");
             var environment = configuration.GetValue<string>("WSO2:Environment");
 
-            Action<HttpClient> clientConfiguration = 
-                options => options.BaseAddress = new Uri(url + environment);
+            void ClientConfiguration(HttpClient options) => options.BaseAddress = new Uri(url + environment);
 
             services.AddRefitClient<IWso2DataService>()
                 .ConfigureHttpClient(options => options.BaseAddress = new Uri(url));
-                           
+
             services.AddRefitClient<IKeyDataService>()
-                .ConfigureHttpClient(clientConfiguration);
+                .ConfigureHttpClient(ClientConfiguration);
 
             services.AddRefitClient<IRegistrationDataService>()
-                .ConfigureHttpClient(clientConfiguration)
+                .ConfigureHttpClient(ClientConfiguration)
                 .AddHttpMessageHandler<AuthHeaderHandler>();
 
             services.AddRefitClient<ICooperadoDataService>()
-                .ConfigureHttpClient(clientConfiguration)
+                .ConfigureHttpClient(ClientConfiguration)
                 .AddHttpMessageHandler<AuthHeaderHandler>();
             
             services.AddRefitClient<IAuthenticationDataService>()
-                .ConfigureHttpClient(clientConfiguration)
+                .ConfigureHttpClient(ClientConfiguration)
                 .AddHttpMessageHandler<AuthHeaderHandler>();
         }
     }

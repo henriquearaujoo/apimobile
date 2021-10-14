@@ -1,6 +1,5 @@
-﻿using Ailos.ApiMobile.Filters;
-using Ailos.Autentication.Application;
-using Ailos.Http.Data;
+﻿using Ailos.Autentication.Application;
+using Ailos.ApiMobile.Configurations;
 using Ailos.Pix.Cadastro.Application;
 using Ailos.Pix.Chave.Application;
 using Microsoft.Extensions.Configuration;
@@ -12,7 +11,6 @@ namespace Ailos.ApiMobile.Installers
     {
         public void InstallerServices(IServiceCollection services, IConfiguration configuration)
         {
-            services.AddScoped<Wso2AuthenticationFilter>();
             services.AddTransient<AuthHeaderHandler>();
             services.AddScoped<IKeyService, KeyService>();
             services.AddScoped<IRegistrationService, RegistrationService>();

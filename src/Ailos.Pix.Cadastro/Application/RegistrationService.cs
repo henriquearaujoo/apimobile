@@ -1,7 +1,7 @@
 ﻿using Ailos.Pix.Cadastro.Data;
 using Ailos.Pix.Cadastro.DTO.Request;
 using Ailos.Pix.Cadastro.DTO.Response;
-using System;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Ailos.Pix.Cadastro.Application
@@ -14,9 +14,10 @@ namespace Ailos.Pix.Cadastro.Application
         {
             _registrationDataService = registrationDataService;
         }
-        public async Task<ParametersResponse> ParametersListAsync(ParametersRequest parametersRequest)
+
+        public async Task<ParametersResponse> ParametersListAsync(ParametersRequest parametersRequest, CancellationToken cancellationToken)
         {
-            return await _registrationDataService.ParametersListAsync(parametersRequest);
+            return await _registrationDataService.ParametersListAsync(parametersRequest, cancellationToken);
         }
     }
 }
