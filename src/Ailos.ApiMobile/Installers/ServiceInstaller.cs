@@ -1,6 +1,4 @@
-﻿using Ailos.ApiMobile.Filters;
-using Ailos.Autentication.Application;
-using Ailos.Http.Data;
+﻿using Ailos.Autentication.Application;
 using Ailos.ApiMobile.Configurations;
 using Ailos.Pix.Cadastro.Application;
 using Ailos.Pix.Chave.Application;

@@ -32,11 +32,11 @@ namespace Ailos.ApiMobile.Installers
                 .AddHttpMessageHandler<AuthHeaderHandler>();
 
             services.AddRefitClient<ICooperadoDataService>()
-                .ConfigureHttpClient(clientConfiguration)
+                .ConfigureHttpClient(ClientConfiguration)
                 .AddHttpMessageHandler<AuthHeaderHandler>();
             
             services.AddRefitClient<IAuthenticationDataService>()
-                .ConfigureHttpClient(clientConfiguration)
+                .ConfigureHttpClient(ClientConfiguration)
                 .AddHttpMessageHandler<AuthHeaderHandler>();
         }
     }

@@ -1,6 +1,5 @@
 ﻿using Ailos.Common.DTO.Request;
 using System;
-using Ailos.Pix.DTO;
 using System.Collections.Generic;
 
 namespace Ailos.Pix.Chave.DTO.Request
