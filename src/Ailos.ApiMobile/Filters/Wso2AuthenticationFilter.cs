@@ -1,5 +1,4 @@
 ﻿using Ailos.Http.Data;
-using Ailos.Pix.Chave.Application;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Configuration;
 using System.Threading.Tasks;

@@ -50,6 +50,8 @@ namespace Ailos.ApiMobile.Mediator
                 .ConfigureHttpClient(clientConfiguration)
                 .AddHttpMessageHandler<AuthHeaderHandler>();
 
+            services.AddTransient<AuthHeaderHandler>();
+
             services.AddShowRegisteredServices();
         }
 
