@@ -1,18 +1,13 @@
-﻿using Ailos.ApiMobile.Controllers.Pix;
-using Ailos.Autentication.Application;
-using Ailos.Autentication.DTO.Request;
-using Ailos.Autentication.DTO.Response;
+﻿using Ailos.Autentication.Application;
 using Ailos.Autentication.ViewModel;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Ailos.ApiMobile.Controllers
 {
+    [ApiController]
     [Route("api/Seguranca")]
     public class AuthenticationController : ControllerBase
     {
@@ -26,9 +21,9 @@ namespace Ailos.ApiMobile.Controllers
         }
 
         [HttpPost("Autenticar")]
-        public async Task<IActionResult> AuthenticateAsync(AuthenticationViewModel request)
+        public async Task<IActionResult> AuthenticateAsync(AuthenticationViewModel request, CancellationToken cancellationToken)
         {
-            var token = await _authenticationService.AuthenticateAsync(request);
+            var token = await _authenticationService.AuthenticateAsync(request, cancellationToken);
             return Ok(token);
         }
     }

@@ -21,7 +21,7 @@ namespace Ailos.ApiMobile.Mediator.Configurations
         protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
         {
             if (TokenManager.Expired())
-                await Authorize();
+                await AuthorizeAsync(cancellationToken);
 
             var token = TokenManager.Token;
 
@@ -30,10 +30,11 @@ namespace Ailos.ApiMobile.Mediator.Configurations
             return await base.SendAsync(request, cancellationToken).ConfigureAwait(false);
         }
 
-        private async Task Authorize()
+        private async Task AuthorizeAsync(CancellationToken cancellationToken)
         {
             var key = _configuration.GetValue<string>("WSO2:Key");
-            var token = await _wso2Service.Authorize(key);
+            var token = await _wso2Service.AuthorizeAsync(key, cancellationToken);
+
             TokenManager.SetTokenWSO2(token);
         }
     }
