@@ -35,5 +35,17 @@ namespace Ailos.ApiMobile.Controllers.v2
                 throw;
             }
         }
+
+        /// <summary>
+        /// Gera uma exceção
+        /// </summary>
+        [HttpPost("success")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        public IActionResult Success()
+        {
+            _logger.LogInformation("Deu Sucesso proposital!");
+
+            return NoContent();
+        }
     }
 }
