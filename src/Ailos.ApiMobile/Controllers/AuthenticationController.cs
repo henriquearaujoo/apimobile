@@ -13,6 +13,7 @@ using System.Threading.Tasks;
 
 namespace Ailos.ApiMobile.Controllers
 {
+    [ApiController]
     [Route("api/Seguranca")]
     public class AuthenticationController : ControllerBase
     {
@@ -26,6 +27,7 @@ namespace Ailos.ApiMobile.Controllers
         }
 
         [HttpPost("Autenticar")]
+        [ProducesResponseType(typeof(TokenViewModel), StatusCodes.Status200OK)]
         public async Task<IActionResult> AuthenticateAsync(AuthenticationViewModel request)
         {
             var token = await _authenticationService.AuthenticateAsync(request);

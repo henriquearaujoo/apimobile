@@ -6,6 +6,6 @@ namespace Ailos.Autentication.Application
 {
     public interface IAuthenticationService
     {
-        Task<Token> AuthenticateAsync(AuthenticationViewModel request);
+        Task<TokenViewModel> AuthenticateAsync(AuthenticationViewModel request);
     }
 }

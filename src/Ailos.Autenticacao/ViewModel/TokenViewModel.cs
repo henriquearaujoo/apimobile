@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ailos.Autentication.DTO.Response
+namespace Ailos.Autentication.ViewModel
 {
-    public class Token
+    public class TokenViewModel
     {
         public string Autorizacao { get; set; }
         public string Tipo { get; set; }
