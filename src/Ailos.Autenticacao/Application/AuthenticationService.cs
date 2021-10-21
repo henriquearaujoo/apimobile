@@ -5,7 +5,7 @@ using Ailos.Autentication.ViewModel;
 using Ailos.Common.Data;
 using Ailos.Common.DTO.Request;
 using Ailos.Utils;
-using System;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Ailos.Autentication.Application
@@ -21,17 +21,19 @@ namespace Ailos.Autentication.Application
             _cooperadoDataService = cooperadoDataService;
         }
 
-        public async Task<TokenViewModel> AuthenticateAsync(AuthenticationViewModel request)
+        public async Task<Token> AuthenticateAsync(AuthenticationViewModel request, CancellationToken cancellationToken)
         {
-            var cooperado = await _cooperadoDataService.GetData(new CooperadoRequest
+            var cooperadoRequest = new CooperadoRequest
             {
                 CodigoCooperativa = request.Dispositivo.CooperativaId,
                 NumeroConta = request.Dispositivo.NumeroConta,
                 CodigoCanal = 10,
                 IpAcionamento = "127.0.0.1"
-            }, 1);
+            };
 
-            string frase = request.SenhasAutenticacao.Frase.ToUpper();
+            var cooperado = await _cooperadoDataService.GetDataAsync(cooperadoRequest, 1, cancellationToken);
+
+            var frase = request.SenhasAutenticacao.Frase.ToUpper();
 
             var authResult = await _authenticationDataService.Authenticate(new AuthenticationRequest
             {
@@ -42,7 +44,12 @@ namespace Ailos.Autentication.Application
                 Senha = PasswordUtil.CypherPassword(request.SenhasAutenticacao.Senha)
             });
 
-            return authResult;
+            var authResult = await _authenticationDataService.AuthenticateAsync(authRequest, cancellationToken);
+
+            return new Token
+            {
+                Autorizacao = "sas"
+            };
         }
     }
 }
