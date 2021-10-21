@@ -8,7 +8,7 @@ namespace Ailos.Autentication.Data
 {
     public interface IAuthenticationDataService
     {
-        [Get("/ailos/autenticacao/api/v1/comun/autenticar")]
-        Task<ApiResponse<Token>> AuthenticateAsync(AuthenticationRequest request, CancellationToken cancellationToken);
+        [Get("/ailos/autenticacao/api/v1/comum/autenticar")]
+        Task<AuthenticationResponse> AuthenticateAsync(AuthenticationRequest request, CancellationToken cancellationToken);
     }
 }
