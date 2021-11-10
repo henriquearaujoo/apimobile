@@ -25,6 +25,13 @@ namespace Ailos.Nullable
         {
             CustomerRepository repository = new();
 
+            var model = repository.FindFirst("Diego", "Alles");
+
+            if (model is null)
+                throw new Exception("Model not found");
+
+            Console.WriteLine($"FirstName: {model.FirstName} | LastName: {model.LastName}");
+
             // Verificando lista antes de utiliza-lá
             var all = repository.GetAll();
 
